@@ -85,8 +85,8 @@
 />
 <ComputerRoom position={[ -20, 0.25, 40]} />
 
-<video bind:this={videoEl} id="video01" loop autoplay crossOrigin="anonymous" playsinline style="display:none" src="/videos/vecteezy_animation-of-digital-data-moving-on-back-background_51579650.webm"></video>
-<Desk position={[-11, -11, 13]} rotation={[0, rad(-39), 0]} />
+<video bind:this={videoEl} id="video01" loop autoplay muted crossOrigin="anonymous" playsinline style="display:none" src="/videos/vecteezy_animation-of-digital-data-moving-on-back-background_51579650.webm"></video>
+<Desk position={[-11, -11.25, 13]} rotation={[0, rad(-39), 0]} />
 <T.Mesh position={[-12.5, -11, 15]} rotation={[rad(20), rad(141), rad(-13)]}>
   <T.BoxGeometry attach="geometry" args={[16/2, 9/2, 0]} />
   {#if videoEl}

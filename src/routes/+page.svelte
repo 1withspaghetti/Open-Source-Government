@@ -1,14 +1,16 @@
 <script lang="ts">
   import App from '$lib/components/App.svelte'
+    import ScrollText from '$lib/components/ScrollText.svelte';
 </script>
 
 <div>
   <App />
 </div>
+<ScrollText />
 
 <style>
   :global(body) {
-    height: 400vh;
+    height: 500vh;
     margin: 0;
   }
 
@@ -16,6 +18,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     background: rgb(13, 19, 32);
